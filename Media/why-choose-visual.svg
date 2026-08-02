@@ -1,0 +1,44 @@
+<svg width="720" height="520" viewBox="0 0 720 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="panel" x1="100" y1="80" x2="620" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A3236"/>
+      <stop offset="1" stop-color="#1D2428"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="90" y1="70" x2="630" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5F726A"/>
+      <stop offset="1" stop-color="#3F524A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="170" y1="170" x2="550" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#789087"/>
+      <stop offset="1" stop-color="#5A6F67"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="520" rx="28" fill="#151B1E"/>
+
+  <rect x="82" y="58" width="556" height="404" rx="22" fill="url(#frame)" opacity="0.35"/>
+  <rect x="96" y="72" width="528" height="376" rx="18" fill="url(#panel)" stroke="#44524E" stroke-width="2"/>
+
+  <rect x="96" y="72" width="528" height="52" rx="18" fill="#232C30"/>
+  <circle cx="128" cy="98" r="7" fill="#748A82"/>
+  <circle cx="152" cy="98" r="7" fill="#596C65"/>
+  <circle cx="176" cy="98" r="7" fill="#44534E"/>
+
+  <rect x="128" y="156" width="224" height="24" rx="6" fill="#D9E0DF" opacity="0.88"/>
+  <rect x="128" y="194" width="350" height="14" rx="5" fill="#7E8F89" opacity="0.8"/>
+  <rect x="128" y="218" width="310" height="14" rx="5" fill="#6C7D77" opacity="0.75"/>
+
+  <rect x="128" y="258" width="186" height="122" rx="10" fill="#20282C" stroke="#3A4744"/>
+  <rect x="340" y="258" width="252" height="122" rx="10" fill="#20282C" stroke="#3A4744"/>
+
+  <rect x="144" y="278" width="90" height="10" rx="4" fill="#90A39D"/>
+  <rect x="144" y="298" width="144" height="8" rx="4" fill="#62736D"/>
+  <rect x="144" y="314" width="128" height="8" rx="4" fill="#556761"/>
+
+  <rect x="356" y="278" width="112" height="10" rx="4" fill="#90A39D"/>
+  <rect x="356" y="298" width="208" height="8" rx="4" fill="#62736D"/>
+  <rect x="356" y="314" width="176" height="8" rx="4" fill="#556761"/>
+
+  <rect x="492" y="340" width="84" height="26" rx="13" fill="url(#accent)"/>
+  <rect x="144" y="340" width="96" height="26" rx="13" fill="url(#accent)"/>
+</svg>
