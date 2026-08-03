@@ -870,16 +870,25 @@ h2 {
 /* Responsive */
 @media (max-width: 768px) {
   .header {
-    padding: 1rem 1.5rem;
-    justify-content: center;
+    padding: 0.55rem 1rem;
+    justify-content: flex-start;
     position: sticky;
     top: 0;
   }
 
+  .header.scrolled {
+    padding: 0.45rem 1rem;
+  }
+
   .logo {
-    width: 100%;
+    width: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-right: auto;
+  }
+
+  .logo-img {
+    height: 62px;
   }
 
   .nav {
