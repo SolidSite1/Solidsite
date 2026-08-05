@@ -162,7 +162,7 @@ section, header, footer {
   padding: 7rem 2rem 5rem;
   background-image:
     linear-gradient(180deg, rgba(14, 20, 26, 0.78), rgba(14, 20, 26, 0.9)),
-    url('Media/hero-1.png');
+    url('Media/hero-1.jpg');
   background-size: auto, cover;
   background-position: center, center;
   background-repeat: no-repeat;
