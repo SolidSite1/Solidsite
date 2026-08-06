@@ -10,6 +10,45 @@ const formStatus = document.getElementById('form-status');
 const langToggle = document.getElementById('lang-toggle');
 const metaDescription = document.querySelector('meta[name="description"]');
 
+// Hero parallax on scroll
+const hero = document.querySelector('.hero');
+const heroBg = document.querySelector('.hero-bg');
+const heroShapes = document.querySelectorAll('.hero-shape');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (hero && !prefersReducedMotion) {
+  const shapeSpeeds = [0.42, -0.65, 0.88];
+  let parallaxTicking = false;
+
+  function updateHeroParallax() {
+    const scrollY = window.scrollY;
+    const inView = scrollY < hero.offsetHeight + 200;
+
+    if (inView) {
+      if (heroBg) {
+        heroBg.style.transform = `translate3d(0, ${scrollY * 0.28}px, 0) scale(${1 + Math.min(scrollY / 5000, 0.06)})`;
+      }
+      heroShapes.forEach((shape, index) => {
+        const speed = shapeSpeeds[index % shapeSpeeds.length];
+        const direction = index % 2 === 0 ? 1 : -1;
+        shape.style.transform = `translate3d(${scrollY * 0.035 * direction}px, ${scrollY * speed}px, 0) rotate(${scrollY * 0.08 * direction}deg) scale(${1 + Math.min(scrollY / 3200, 0.08)})`;
+      });
+    }
+
+    parallaxTicking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!parallaxTicking) {
+      requestAnimationFrame(updateHeroParallax);
+      parallaxTicking = true;
+    }
+  }, { passive: true });
+
+  updateHeroParallax();
+}
+
+
 const translations = {
   en: {
     documentLang: 'en',
